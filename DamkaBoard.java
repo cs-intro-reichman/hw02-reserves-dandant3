@@ -14,7 +14,8 @@ public class DamkaBoard {
 			while (j < n) {
 				System.out.print("*");
 				j++;
-				System.out.print(" ");
+				if( j < n){
+				System.out.print(" ");}
 			}
 			System.out.println();
 			i++;
