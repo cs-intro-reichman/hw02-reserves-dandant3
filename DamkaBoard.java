@@ -4,22 +4,15 @@
 public class DamkaBoard {
 	public static void main(String[] args) {
 		int n = Integer.parseInt(args[0]);
-		int i = 0;
-		// iterate through square rows
-		while (i < n) {
-			// iterate through square columns
-			if(i% 2!=0){
-				System.out.print(" ");}
-			int j = 0;
-			while (j < n) {
-				System.out.print("*");
-				j++;
-				if( j < n){
-				System.out.print(" ");}
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				if (i % 2 == 0) {
+					System.out.print("* ");
+				} else {
+					System.out.print(" *");
+				}
 			}
-			if( i < n - 1){
-			System.out.println();}
-			i++;
+			System.out.println();
 		}
 	}
 }
