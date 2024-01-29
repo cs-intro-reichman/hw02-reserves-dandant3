@@ -8,16 +8,15 @@ public class DamkaBoard {
 		// iterate through square rows
 		while (i < n) {
 			// iterate through square columns
+			if(i% 2==0){
+				System.out.print(" ");}
 			int j = 0;
 			while (j < n) {
 				System.out.print("*");
 				j++;
 				System.out.print(" ");
 			}
-			if(i% 2==0){
-				System.out.print("\n ");
-			}else{
-				System.out.println(" ");}
+			System.out.println();
 			i++;
 		}
 	}
