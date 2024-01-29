@@ -3,6 +3,21 @@
  */
 public class DamkaBoard {
 	public static void main(String[] args) {
-		//// Put your code here
+		int n = Integer.parseInt(args[0]);
+		int i = 0;
+		// iterate through square rows
+		while (i < n) {
+			// iterate through square columns
+			int j = 0;
+			while (j < n) {
+				System.out.print("* ");
+				j++;
+			}
+			if(i% 2==0){
+				System.out.print("\n ");
+			}else{
+				System.out.println(" ");}
+			i++;
+		}
 	}
 }
