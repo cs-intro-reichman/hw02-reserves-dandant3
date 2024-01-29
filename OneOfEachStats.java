@@ -46,8 +46,8 @@ public class OneOfEachStats {
 				else{ f5 = "5";}
 		}
 		if( f3 > f4){
-			f5 = "4";}
-		else{ f5 = "5";}
+			f5 = "3";}
+		else{ f5 = "4";}
 		
         double average = (double) sum / T;
         System.out.println("Average: " + average + " children to get at least one of each gender.");
