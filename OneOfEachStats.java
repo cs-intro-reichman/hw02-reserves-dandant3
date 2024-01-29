@@ -42,18 +42,20 @@ public class OneOfEachStats {
         }
 		if( f2 > f3){
 			if( f2 > f4){
-				f5 = "3";}
-				else{ f5 = "5";}
+				f5 = "2";}
+				else{ f5 = "4";}
 		}
-		if( f3 > f4){
-			f5 = "3";}
-		else{ f5 = "4";}
+		if( f2 < f3){
+			if( f3 > f4){
+				f5 = "3";}
+			else{ f5 = "4";}
+		}
 		
         double average = (double) sum / T;
         System.out.println("Average: " + average + " children to get at least one of each gender.");
         System.out.println("Number of families with 2 children: " + f2);
         System.out.println("Number of families with 3 children: " + f3);
         System.out.println("Number of families with 4 or more children: " + f4);
-		System.out.println("The most common number of children is " + f5);
+		System.out.println("The most common number of children is " + f5 + ".");
     }
 }
